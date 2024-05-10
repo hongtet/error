@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=1" name="viewport" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Hóng Tết! - Trang Web Đếm Ngược Ngày Tết - Trang Chủ</title>
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#006e33" />
+<link rel="icon" sizes="192x192" href="https://hongtet.github.io/img/img/logo.png" />
+<link rel="apple-touch-icon-precomposed" href="https://hongtet.github.io/img/img/logo.png" sizes="72x72">
+<link rel="apple-touch-icon-precomposed" href="https://hongtet.github.io/img/img/logo.png" sizes="144x144">
+<link rel="apple-touch-icon-precomposed" href="https://hongtet.github.io/img/img/logo.png" sizes="180x180">
+<link rel="apple-touch-icon-precomposed" href="https://hongtet.github.io/img/img/logo.png" sizes="57x57">
+<link rel="apple-touch-icon-precomposed" href="https://hongtet.github.io/img/img/logo.png" sizes="114x114">
+<link rel="nokia-touch-icon" href="https://hongtet.github.io/img/img/logo.png">
+<link rel="apple-touch-icon-precomposed" href="https://hongtet.github.io/img/img/logo.png" sizes="1x1">
+<meta name="apple-mobile-web-app-status-bar-style" content="#006e33" />
+<meta name="msapplication-square310x310logo" content="https://hongtet.github.io/img/img/logo.png" />
+<meta property="og:locale" content="vi" />
+<meta property="og:image" content="https://hongtet.github.io/img/img/logo.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="628" />
+<link rel="stylesheet" href="https://hongtet.github.io/css/css/style.css">
+<script src="https://hongtet.github.io/js/js/moment.js"></script>
+<script src="https://hongtet.github.io/js/js/moment-lunar.min.js"></script>
+
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+	  var ngayChuyenHuong = [
+		{ ngay: '2025-01-29T00:00:00', url: 'https://hongtet.github.io//chuc-tet/' },
+		{ ngay: '2026-02-17T00:00:00', url: 'https://hongtet.github.io//chuc-tet/' },
+		{ ngay: '2027-02-06T00:00:00', url: 'https://hongtet.github.io//chuc-tet/' },
+		{ ngay: '2028-01-26T00:00:00', url: 'https://hongtet.github.io//chuc-tet/' }
+		// Thêm các ngày và URL tương ứng tại đây
+	  ];
+  
+	  function kiemTraChuyenHuong() {
+		var bayGio = new Date();
+		for (var i = 0; i < ngayChuyenHuong.length; i++) {
+		  var ngay = new Date(ngayChuyenHuong[i].ngay);
+		  if (bayGio >= ngay) {
+			window.location.href = ngayChuyenHuong[i].url;
+			break; // Dừng vòng lặp nếu đã chuyển hướng
+		  }
+		}
+	  }
+  
+	  // Kiểm tra mỗi giây xem đã đến ngày chuyển hướng chưa
+	  setInterval(kiemTraChuyenHuong, 100000);
+	});
+  </script>
+  </head>
+<body>
+  <style>
+    body{-webkit-user-select:none;-ms-user-select:none;user-select:none;font-size:12px;background:#fff;font-family:Arial, Helvetica, sans-serif}
+body,h1,h2,h3,h4,h5,p,ul,li{padding:0;margin:0;list-style:none}
+.tcy_404{padding-top:180px;padding-bottom:112px}
+.container{width:1170px}
+.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+.tcy_404 img{display:block;margin:auto}
+.tcy_404 h2{font-size:32px;color:#333333;text-align:center;letter-spacing:5px;padding-top:33px;padding-bottom:25px}
+.tcy_404 p{font-size:14px;color:#666666;letter-spacing:1px;text-align:center;padding-bottom:35px}
+.btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px solid transparent;border-radius:4px}
+.btn-primary{color:#fff;background-color:#337ab7;border-color:#2e6da4}
+.btn_blue{display:inline-block;height:56px;line-height:56px;text-align:center;border-radius:3px;background:#7caced;color:#fff;letter-spacing:5px;border:0;font-size:18px;padding:0;text-decoration:none;-webkit-transition-duration:0.3s;transition-duration:0.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out;-webkit-transition-property:background;transition-property:background}
+.tcy_404 a{display:block;margin:auto;width:220px;height:56px}
+  </style>
+<div class="tcy_404 container">
+<img src="https://i.imgur.com/7BkhF3t.png">
+<h2>Oops, the page you visited does not exist!</h2>
+<p>Sorry for the inconvenience, Hóng Tết! will try to fix the problem as quickly as possible!</p>
+<a href="https://hongtet.github.io/trangchu/" class="btn btn-primary btn_blue">Back to home</a>
+</div>
+</body>
+</html>
